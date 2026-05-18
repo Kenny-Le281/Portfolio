@@ -112,36 +112,36 @@ function App() {
         <section className="services-section">
           <div className="container">
             <div className="services-heading text-center mb-5">
-              <p className="services-label">My Services</p>
-              <h2 className="services-title">What I Can Do For You</h2>
+              <p className="services-label">Case Studies</p>
+              <h2 className="services-title">Projects I’m Building</h2>
             </div>
 
             <div className="row justify-content-center gx-4 gy-4">
               <div className="col-sm-10 col-md-6 d-flex justify-content-center">
                 <div className="service-card">
-                  <h3>Web & App Development</h3>
-                  <p className="service-copy">Design and build polished, responsive web applications using modern front-end tools and best UI practices.</p>
+                  <h3>Bike Repair Shop</h3>
+                  <p className="service-copy">A user-focused bike repair booking experience with service selection, appointment scheduling, and storefront details.</p>
                 </div>
               </div>
 
               <div className="col-sm-10 col-md-6 d-flex justify-content-center">
                 <div className="service-card">
-                  <h3>UI / UX Design</h3>
-                  <p className="service-copy">Create user-friendly interfaces with strong visual hierarchy, typography, and clean layout systems.</p>
+                  <h3>Memory Game</h3>
+                  <p className="service-copy">A playful memory matching game with responsive design, animations, and polished user interactions.</p>
                 </div>
               </div>
 
               <div className="col-sm-10 col-md-6 d-flex justify-content-center">
                 <div className="service-card">
-                  <h3>Software Solutions</h3>
-                  <p className="service-copy">Develop scalable, maintainable solutions that solve real problems and keep business goals top of mind.</p>
+                  <h3>E-commerce Store</h3>
+                  <p className="service-copy">A modern online storefront with product browsing, clean checkout flows, and strong visual merchandising.</p>
                 </div>
               </div>
 
               <div className="col-sm-10 col-md-6 d-flex justify-content-center">
                 <div className="service-card">
-                  <h3>Creative Branding</h3>
-                  <p className="service-copy">Support brand identity with polished visuals, consistent style, and professional presentation.</p>
+                  <h3>Analytics Dashboard</h3>
+                  <p className="service-copy">A data-driven analytics site with clear charts, performance metrics, and easy-to-scan insights.</p>
                 </div>
               </div>
             </div>
