@@ -1,5 +1,9 @@
 import heroImg from './assets/hero.jpg'
-import bikeRepairImg from './assets/bike-repair-service.jpg'
+import profileImg from './assets/profile-headshot.jpg'
+import bikeRepairCase from './assets/bike-repair-service.jpg'
+import memoryGameCase from './assets/memory-game.avif'
+import ecommerceStoreCase from './assets/e-commerce.jpg'
+import analyticsDashboardCase from './assets/analytics-dashboard.avif'
 import './App.css'
 
 function App() {
@@ -29,18 +33,16 @@ function App() {
       <main>
         <section className="hero" style={{ backgroundImage: `url(${heroImg})` }}>
           <div className="hero-overlay" />
-          <div className="container hero-content">
-            <div className="hero-left">
-              <h1 className="hero-name">Kenny Le</h1>
-              <p className="hero-sub">PORTFOLIO</p>
-              <a className="btn btn-primary mt-4" href="#about">About Me</a>
-            </div>
-
-            <div className="hero-card">
-              <div className="role">Innovative</div>
-              <div className="role">Software Developer</div>
-              <div className="role">Creative</div>
-              <div className="hero-location">Ottawa, Ontario</div>
+          <div className="container">
+            <div className="row align-items-center hero-content">
+              <div className="col-md-6">
+                <div className="hero-left">
+                  <p className="hero-eyebrow">Software Developer</p>
+                  <h1 className="hero-name">Kenny Le</h1>
+                  <p className="hero-sub">Designing clean digital experiences with clarity, confidence, and calm.</p>
+                  <a className="btn btn-primary hero-cta mt-4" href="#about">About Me</a>
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -49,19 +51,25 @@ function App() {
           <div className="container">
             <div className="row align-items-center gy-4">
               <div className="col-lg-6">
-                <p className="section-label">About Me</p>
-                <h2 className="section-title">Hello, I'm Kenny.</h2>
-                <p className="section-copy">I am a passionate software developer and creative problem solver based in Ottawa. I design polished, user-focused digital experiences and build modern applications that help teams move faster.</p>
-                <p className="section-copy">My work brings together strong visual design with practical software architecture, producing clean interfaces and scalable solutions across web and mobile.</p>
+                <div className="about-text-panel">
+                  <p className="section-label">About Me</p>
+                  <h2 className="section-title">Hello, I'm Kenny.</h2>
+                  <p className="section-copy">
+                    I am a second-year Software Engineering student in the co-op program at the University of Ottawa. I am passionate about software development and enjoy building clean, efficient, and user-focused applications.
+                  </p>
+
+                  <p className="section-copy">
+                    I have experience working in full-stack development, along with exposure to agentic workflows and internal developer platforms (IDPs). I enjoy exploring how modern software systems are built and how different tools and services work together to create scalable applications.
+                  </p>
+
+                  <p className="section-copy">
+                    Outside of development, I enjoy playing sports such as tennis and soccer, which help me stay active and balanced.
+                  </p>
+                </div>
               </div>
               <div className="col-lg-6">
-                <div className="profile-panel">
-                  <p className="panel-heading">Quick facts</p>
-                  <ul className="profile-list">
-                    <li><strong>Experience:</strong> UI-driven full stack projects</li>
-                    <li><strong>Specialty:</strong> React, Bootstrap, responsive design</li>
-                    <li><strong>Location:</strong> Ottawa, Ontario</li>
-                  </ul>
+                <div className="about-photo-panel">
+                  <img src={profileImg} alt="Kenny Le" className="profile-image" />
                 </div>
               </div>
             </div>
@@ -73,36 +81,50 @@ function App() {
             <div className="row justify-content-center text-center mb-5">
               <div className="col-xl-8 col-lg-10">
                 <p className="section-label">How I Work</p>
-                <h2 className="section-title">A simple process for better product outcomes</h2>
+                <h2 className="section-title">My Workflow as a UI/UX Designer</h2>
               </div>
             </div>
             <div className="row gx-4 gy-4 justify-content-center">
               <div className="col-sm-10 col-md-6">
                 <div className="work-card">
                   <span className="work-step">01</span>
-                  <h3>Discover</h3>
-                  <p className="work-copy">I listen to your goals, understand your users, and define clear project requirements before writing a line of code.</p>
+                  <h3>Understand the problem</h3>
+                  <p className="work-copy">What am I building? Who is it for?</p>
                 </div>
               </div>
               <div className="col-sm-10 col-md-6">
                 <div className="work-card">
                   <span className="work-step">02</span>
-                  <h3>Design</h3>
-                  <p className="work-copy">I craft polished interfaces that feel modern and intuitive, using typography, spacing, and layout systems that scale.</p>
+                  <h3>Plan the layout</h3>
+                  <p className="work-copy">Sketch ideas (paper or Figma). Decide structure (navbar, cards, etc.).</p>
                 </div>
               </div>
               <div className="col-sm-10 col-md-6">
                 <div className="work-card">
                   <span className="work-step">03</span>
-                  <h3>Build</h3>
-                  <p className="work-copy">I develop responsive apps with clean, maintainable code so your product performs well across screens and devices.</p>
+                  <h3>Design the UI</h3>
+                  <p className="work-copy">Choose colors, fonts, spacing. Make it look clean and consistent.</p>
                 </div>
               </div>
               <div className="col-sm-10 col-md-6">
                 <div className="work-card">
                   <span className="work-step">04</span>
-                  <h3>Launch</h3>
-                  <p className="work-copy">I help you ship with confidence, ensuring the final product is polished, stable, and ready for users.</p>
+                  <h3>Build it</h3>
+                  <p className="work-copy">Code it using React. Style it with Bootstrap or CSS.</p>
+                </div>
+              </div>
+              <div className="col-sm-10 col-md-6">
+                <div className="work-card">
+                  <span className="work-step">05</span>
+                  <h3>Test & improve</h3>
+                  <p className="work-copy">Check responsiveness (mobile vs desktop). Fix spacing, alignment, usability issues.</p>
+                </div>
+              </div>
+              <div className="col-sm-10 col-md-6">
+                <div className="work-card">
+                  <span className="work-step">06</span>
+                  <h3>Iterate on feedback</h3>
+                  <p className="work-copy">Gather user feedback, refine the interface, and improve usability based on real-world input.</p>
                 </div>
               </div>
             </div>
@@ -118,31 +140,55 @@ function App() {
 
             <div className="row justify-content-center gx-4 gy-4">
               <div className="col-sm-10 col-md-6 d-flex justify-content-center">
-                <div className="service-card">
-                  <h3>Bike Repair Shop</h3>
-                  <p className="service-copy">A user-focused bike repair booking experience with service selection, appointment scheduling, and storefront details.</p>
-                </div>
+                <a href="/bike-repair.html" className="case-link">
+                  <div className="case-card">
+                    <img src={bikeRepairCase} alt="Bike Repair Shop" className="case-image" />
+                    <div className="case-card-body">
+                      <h3>Bike Repair Shop</h3>
+                      <p className="case-copy">A user-focused bike repair booking experience with service selection, appointment scheduling, and storefront details.</p>
+                      <span className="coming-tag">Coming Soon</span>
+                    </div>
+                  </div>
+                </a>
               </div>
 
               <div className="col-sm-10 col-md-6 d-flex justify-content-center">
-                <div className="service-card">
-                  <h3>Memory Game</h3>
-                  <p className="service-copy">A playful memory matching game with responsive design, animations, and polished user interactions.</p>
-                </div>
+                <a href="/memory-game.html" className="case-link">
+                  <div className="case-card">
+                    <img src={memoryGameCase} alt="Memory Game" className="case-image" />
+                    <div className="case-card-body">
+                      <h3>Memory Game</h3>
+                      <p className="case-copy">A playful memory matching game with responsive design, animations, and polished user interactions.</p>
+                      <span className="coming-tag">Coming Soon</span>
+                    </div>
+                  </div>
+                </a>
               </div>
 
               <div className="col-sm-10 col-md-6 d-flex justify-content-center">
-                <div className="service-card">
-                  <h3>E-commerce Store</h3>
-                  <p className="service-copy">A modern online storefront with product browsing, clean checkout flows, and strong visual merchandising.</p>
-                </div>
+                <a href="/ecommerce-store.html" className="case-link">
+                  <div className="case-card">
+                    <img src={ecommerceStoreCase} alt="E-commerce Store" className="case-image" />
+                    <div className="case-card-body">
+                      <h3>E-commerce Store</h3>
+                      <p className="case-copy">A modern online storefront with product browsing, clean checkout flows, and strong visual merchandising.</p>
+                      <span className="coming-tag">Coming Soon</span>
+                    </div>
+                  </div>
+                </a>
               </div>
 
               <div className="col-sm-10 col-md-6 d-flex justify-content-center">
-                <div className="service-card">
-                  <h3>Analytics Dashboard</h3>
-                  <p className="service-copy">A data-driven analytics site with clear charts, performance metrics, and easy-to-scan insights.</p>
-                </div>
+                <a href="/analytics-dashboard.html" className="case-link">
+                  <div className="case-card">
+                    <img src={analyticsDashboardCase} alt="Analytics Dashboard" className="case-image" />
+                    <div className="case-card-body">
+                      <h3>Analytics Dashboard</h3>
+                      <p className="case-copy">A data-driven analytics site with clear charts, performance metrics, and easy-to-scan insights.</p>
+                      <span className="coming-tag">Coming Soon</span>
+                    </div>
+                  </div>
+                </a>
               </div>
             </div>
           </div>
