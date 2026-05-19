@@ -1,3 +1,4 @@
+import { Button, Col, Container, Navbar, Nav, Row } from 'react-bootstrap'
 import heroImg from './assets/hero.jpg'
 import profileImg from './assets/profile-headshot.jpg'
 import bikeRepairCase from './assets/bike-repair-service.jpg'
@@ -9,48 +10,40 @@ import './App.css'
 function App() {
   return (
     <>
-      <nav className="navbar navbar-expand-lg navbar-light bg-light">
-        <div className="container-fluid">
-          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div className="collapse navbar-collapse justify-content-center" id="navbarNav">
-            <ul className="navbar-nav">
-              <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">About</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">Contact</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+      <Navbar bg="light" expand="lg" className="mb-4">
+        <Container>
+          <Navbar.Toggle aria-controls="navbar-nav" />
+          <Navbar.Collapse id="navbar-nav">
+            <Nav className="mx-auto">
+              <Nav.Link href="#" active>Home</Nav.Link>
+              <Nav.Link href="#">About</Nav.Link>
+              <Nav.Link href="#">Contact</Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
 
       <main>
         <section className="hero" style={{ backgroundImage: `url(${heroImg})` }}>
           <div className="hero-overlay" />
-          <div className="container">
-            <div className="row align-items-center hero-content">
-              <div className="col-md-6">
+          <Container>
+            <Row className="align-items-center hero-content">
+              <Col md={6}>
                 <div className="hero-left">
                   <p className="hero-eyebrow">Software Developer</p>
                   <h1 className="hero-name">Kenny Le</h1>
                   <p className="hero-sub">Designing clean digital experiences with clarity, confidence, and calm.</p>
-                  <a className="btn btn-primary hero-cta mt-4" href="#about">About Me</a>
+                  <Button href="#about" className="hero-cta mt-4">About Me</Button>
                 </div>
-              </div>
-            </div>
-          </div>
+              </Col>
+            </Row>
+          </Container>
         </section>
 
         <section id="about" className="about-section">
-          <div className="container">
-            <div className="row align-items-center gy-4">
-              <div className="col-lg-6">
+          <Container>
+            <Row className="align-items-center gy-4">
+              <Col lg={6}>
                 <div className="about-text-panel">
                   <p className="section-label">About Me</p>
                   <h2 className="section-title">Hello, I'm Kenny.</h2>
@@ -66,14 +59,14 @@ function App() {
                     Outside of development, I enjoy playing sports such as tennis and soccer, which help me stay active and balanced.
                   </p>
                 </div>
-              </div>
-              <div className="col-lg-6">
+              </Col>
+              <Col lg={6}>
                 <div className="about-photo-panel">
                   <img src={profileImg} alt="Kenny Le" className="profile-image" />
                 </div>
-              </div>
-            </div>
-          </div>
+              </Col>
+            </Row>
+          </Container>
         </section>
 
         <section className="work-section">
