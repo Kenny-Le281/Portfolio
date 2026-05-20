@@ -1,10 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;600&display=swap');
 
 .light-blue-bg {
-  background: linear-gradient(135deg, #a1e7ff 0%, #e8f4ff 100%);
+  background: linear-gradient(135deg, #5a9fd4 0%, #4a8fc4 100%);
   padding: 40px;
   border-radius: 12px;
   box-shadow: 0 6px 24px rgba(26,58,82,0.08);
+}
+
+.navbar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 50;
+  background-color: transparent !important;
+  box-shadow: none;
+  margin-bottom: 0;
+}
+
+.navbar .nav-link {
+  height: 10px;
+  display: flex;
+  font-size: 0.95rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  letter-spacing: 2px;
+  word-spacing: 20px;
+  color: rgba(255, 255, 255, 0.9) !important;
 }
 
 .hero-section {
@@ -63,7 +84,7 @@
   background-size: cover;
   background-position: center;
   position: relative;
-  padding: 100px 0 70px;
+  padding: 400px 0 70px;
 }
 
 .hero-overlay {
@@ -81,6 +102,7 @@
   color: #ffffff;
   text-align: left;
   max-width: 520px;
+  margin-top: -255px;
 }
 
 .hero-eyebrow {
@@ -200,7 +222,7 @@
 }
 
 .about-section {
-  background: linear-gradient(180deg, #f7fbff 0%, #eef6ff 100%);
+  background: linear-gradient(135deg, #ecf7ff 0%, #adc0ce 100%);
 }
 
 .section-label {

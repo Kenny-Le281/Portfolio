@@ -10,21 +10,23 @@ import './App.css'
 function App() {
   return (
     <>
-      <Navbar bg="light" expand="lg" className="mb-4">
+      <Navbar expand="lg" className="mb-4">
         <Container>
           <Navbar.Toggle aria-controls="navbar-nav" />
           <Navbar.Collapse id="navbar-nav">
-            <Nav className="mx-auto">
-              <Nav.Link href="#" active>Home</Nav.Link>
-              <Nav.Link href="#">About</Nav.Link>
-              <Nav.Link href="#">Contact</Nav.Link>
+            <Nav className="mx-auto gap-5">
+              <Nav.Link href="#" active>HOME</Nav.Link>
+              <Nav.Link href="#about">ABOUT</Nav.Link>
+              <Nav.Link href="#workflows">WORKFLOWS</Nav.Link>
+              <Nav.Link href="#case-studies">PROJECTS</Nav.Link>
+              <Nav.Link href="#contact">CONTACT</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
       </Navbar>
 
       <main>
-        <section className="hero" style={{ backgroundImage: `url(${heroImg})` }}>
+        <section className="hero min-vh-75" style={{ backgroundImage: `url(${heroImg})` }}>
           <div className="hero-overlay" />
           <Container>
             <Row className="align-items-center hero-content">
@@ -32,8 +34,7 @@ function App() {
                 <div className="hero-left">
                   <p className="hero-eyebrow">Software Developer</p>
                   <h1 className="hero-name">Kenny Le</h1>
-                  <p className="hero-sub">Designing clean digital experiences with clarity, confidence, and calm.</p>
-                  <Button href="#about" className="hero-cta mt-4">About Me</Button>
+                  <p className="hero-sub">Developing reliable and scalable software solutions</p>
                 </div>
               </Col>
             </Row>
@@ -69,7 +70,7 @@ function App() {
           </Container>
         </section>
 
-        <section className="work-section">
+        <section id="workflows" className="work-section">
           <div className="container">
             <div className="row justify-content-center text-center mb-5">
               <div className="col-xl-8 col-lg-10">
@@ -124,7 +125,7 @@ function App() {
           </div>
         </section>
 
-        <section className="services-section">
+        <section id="case-studies" className="services-section">
           <div className="container">
             <div className="services-heading text-center mb-5">
               <p className="services-label">Case Studies</p>
