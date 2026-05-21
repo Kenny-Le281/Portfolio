@@ -28,9 +28,10 @@
   color: rgba(255, 255, 255, 0.9) !important;
 }
 
-.hero-section {
-  text-align: center;
-  padding: 40px 0;
+/* Hero Section */
+
+.hero {
+  min-height: 45vh;
 }
 
 .hero-name {
@@ -90,7 +91,7 @@
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(7, 26, 50, 0.62) 0%, rgba(7, 26, 50, 0.42) 100%);
+  background: linear-gradient(180deg, rgba(6, 18, 9, 0.62) 0%, rgba(10, 15, 25, 0.55) 100%);
 }
 
 .hero-content {
@@ -216,25 +217,29 @@
   .hero-card { width: 100%; }
 }
 
-/* About Section */
+/* Padding between sections */
 .about-section,
-.work-section {
+.work-section,
+.services-section {
   padding: 80px 0;
-  
 }
 
+
+
+/* About */
 .about-section {
   background: linear-gradient(
     to bottom,
-    rgba(10, 15, 25, 0.55) 0%,
-    rgba(212, 225, 252, 0.35) 30%
+    rgba(0, 0, 0, 0.55) 0%,
+    rgba(255, 255, 255, 0.35) 40%
   );
 }
 
 .section-label {
   font-family: 'Inter', sans-serif;
   font-size: 13px;
-  color: #4a90e2;
+  color: #10B981;
+  font-weight: 600;
   letter-spacing: 0.22em;
   text-transform: uppercase;
   margin-bottom: 14px;
@@ -257,11 +262,12 @@
 
 .about-text-panel,
 .about-photo-panel {
-  background: rgba(255,255,255,0.95);
-  border: 1px solid rgba(74,144,226,0.18);
-  border-radius: 28px;
-  padding: 16px;
-  box-shadow: 0 22px 45px rgba(15, 67, 90, 0.08);
+  background: rgba(255, 246, 246, 0.95);
+  border: 5px solid rgba(30, 99, 64, 0.18);
+  border-radius: 24px;
+  padding: 32px 28px;
+  box-shadow: 0 18px 40px rgba(15, 67, 90, 0.08);
+  min-height: 260px;
 }
 
 .about-text-panel {
@@ -278,7 +284,7 @@
 
 .profile-image {
   width: 100%;
-  max-width: 420px;
+  max-width: 520px;
   border-radius: 24px;
   object-fit: cover;
   box-shadow: 0 20px 40px rgba(15, 67, 90, 0.12);
@@ -286,7 +292,7 @@
 
 .profile-panel {
   background: rgba(255,255,255,0.94);
-  border: 1px solid rgba(74,144,226,0.18);
+  border: 1px solid rgba(34, 72, 115, 0.18);
   border-radius: 24px;
   padding: 32px 28px;
 }
@@ -316,16 +322,19 @@
 /* Workflow Section */
 
 .work-section{
+  /*
   background: linear-gradient(
     to bottom,
     rgba(232, 236, 245, 0.35) 0%,
     rgba(233, 239, 252, 0.55) 80%
   );
+  */
+  background: rgba(255, 255, 255, 0.35);
 }
 
 .work-card {
-  background: rgba(255,255,255,0.95);
-  border: 1px solid rgba(74,144,226,0.18);
+  background: rgba(255, 246, 246, 0.95);
+  border: 5px solid rgba(30, 99, 64, 0.18);
   border-radius: 24px;
   padding: 32px 28px;
   box-shadow: 0 18px 40px rgba(15, 67, 90, 0.08);
@@ -339,7 +348,7 @@
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background: #4a90e2;
+  background: #10B981;
   color: #fff;
   font-family: 'Inter', sans-serif;
   font-weight: 700;
@@ -379,26 +388,19 @@
 
 /* Services Section */
 .services-section {
+  /*
   background: linear-gradient(
     to bottom,
     rgba(232, 236, 245, 0.35) 0%,
     rgba(233, 239, 252, 0.55) 80%
   );
-  padding: 80px 0 64px;
+  */
+  background: rgba(255, 255, 255, 0.35);
 }
 
 .services-heading {
   max-width: 640px;
   margin: 0 auto;
-}
-
-.services-label {
-  font-family: 'Inter', sans-serif;
-  font-size: 14px;
-  color: #4a90e2;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  margin-bottom: 12px;
 }
 
 .services-title {
@@ -408,12 +410,11 @@
   color: #163a3a;
 }
 
-.service-card,
 .case-card {
   width: 100%;
   max-width: none;
-  background: rgba(255, 255, 255, 0.95);
-  border: 1px solid rgba(74, 144, 226, 0.18);
+  background: rgba(255, 246, 246, 0.95);
+  border: 5px solid rgba(30, 99, 64, 0.18);
   border-radius: 24px;
   padding: 0;
   overflow: hidden;

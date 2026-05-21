@@ -26,7 +26,7 @@ function App() {
       </Navbar>
 
       <main>
-        <section className="hero min-vh-75" style={{ backgroundImage: `url(${heroImg})` }}>
+        <section className="hero" style={{ backgroundImage: `url(${heroImg})` }}>
           <div className="hero-overlay" />
           <Container>
             <Row className="align-items-center hero-content">
@@ -62,9 +62,7 @@ function App() {
                 </div>
               </Col>
               <Col lg={6}>
-                <div className="about-photo-panel">
-                  <img src={profileImg} alt="Kenny Le" className="profile-image" />
-                </div>
+                <img src={profileImg} alt="Kenny Le" className="profile-image" />
               </Col>
             </Row>
           </Container>
@@ -128,7 +126,7 @@ function App() {
         <section id="case-studies" className="services-section">
           <div className="container">
             <div className="services-heading text-center mb-5">
-              <p className="services-label">Case Studies</p>
+              <p className="section-label">Case Studies</p>
               <h2 className="services-title">Projects I’m Building</h2>
             </div>
 
