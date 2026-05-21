@@ -90,7 +90,7 @@ function App() {
                 <div className="work-card">
                   <span className="work-step">02</span>
                   <h3>Plan the layout</h3>
-                  <p className="work-copy">Sketch ideas (paper or Figma). Decide structure (navbar, cards, etc.).</p>
+                  <p className="work-copy">Sketch ideas (quick paper sketch first, then Figma). Decide structure (navbar, cards, etc.).</p>
                 </div>
               </div>
               <div className="col-sm-10 col-md-6">
@@ -104,7 +104,7 @@ function App() {
                 <div className="work-card">
                   <span className="work-step">04</span>
                   <h3>Build it</h3>
-                  <p className="work-copy">Code it using React. Style it with Bootstrap or CSS.</p>
+                  <p className="work-copy">Code it using React. Style it with Bootstrap and CSS.</p>
                 </div>
               </div>
               <div className="col-sm-10 col-md-6">
@@ -118,7 +118,7 @@ function App() {
                 <div className="work-card">
                   <span className="work-step">06</span>
                   <h3>Iterate on feedback</h3>
-                  <p className="work-copy">Gather user feedback, refine the interface, and improve usability based on real-world input.</p>
+                  <p className="work-copy">Gather user feedback, refine the interface, and improve usability based on user input.</p>
                 </div>
               </div>
             </div>

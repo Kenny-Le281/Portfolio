@@ -216,13 +216,19 @@
   .hero-card { width: 100%; }
 }
 
+/* About Section */
 .about-section,
 .work-section {
   padding: 80px 0;
+  
 }
 
 .about-section {
-  background: linear-gradient(135deg, #ecf7ff 0%, #adc0ce 100%);
+  background: linear-gradient(
+    to bottom,
+    rgba(10, 15, 25, 0.55) 0%,
+    rgba(212, 225, 252, 0.35) 30%
+  );
 }
 
 .section-label {
@@ -307,6 +313,16 @@
   font-size: 16px;
 }
 
+/* Workflow Section */
+
+.work-section{
+  background: linear-gradient(
+    to bottom,
+    rgba(232, 236, 245, 0.35) 0%,
+    rgba(233, 239, 252, 0.55) 80%
+  );
+}
+
 .work-card {
   background: rgba(255,255,255,0.95);
   border: 1px solid rgba(74,144,226,0.18);
@@ -361,8 +377,13 @@
   }
 }
 
+/* Services Section */
 .services-section {
-  background: #eff6ff;
+  background: linear-gradient(
+    to bottom,
+    rgba(232, 236, 245, 0.35) 0%,
+    rgba(233, 239, 252, 0.55) 80%
+  );
   padding: 80px 0 64px;
 }
 
@@ -483,25 +504,6 @@
   .service-card {
     max-width: 100%;
     padding: 26px 22px;
-  }
-}
-
-.counter {
-  font-size: 16px;
-  padding: 5px 10px;
-  border-radius: 5px;
-  color: var(--accent);
-  background: var(--accent-bg);
-  border: 2px solid transparent;
-  transition: border-color 0.3s;
-  margin-bottom: 24px;
-
-  &:hover {
-    border-color: var(--accent-border);
-  }
-  &:focus-visible {
-    outline: 2px solid var(--accent);
-    outline-offset: 2px;
   }
 }
 
