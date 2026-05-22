@@ -10,7 +10,7 @@ import './App.css'
 function App() {
   return (
     <>
-      <Navbar expand="lg" className="mb-4">
+      <Navbar expand="lg" className="pb-5">
         <Container>
           <Navbar.Toggle aria-controls="navbar-nav" />
           <Navbar.Collapse id="navbar-nav">
@@ -19,22 +19,29 @@ function App() {
               <Nav.Link href="#about">ABOUT</Nav.Link>
               <Nav.Link href="#workflows">WORKFLOWS</Nav.Link>
               <Nav.Link href="#case-studies">PROJECTS</Nav.Link>
-              <Nav.Link href="#contact">CONTACT</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
       </Navbar>
 
       <main>
-        <section className="hero" style={{ backgroundImage: `url(${heroImg})` }}>
+        <section className="hero mx-auto my-5 mt-5" style={{ backgroundImage: `url(${heroImg})` }}>
           <div className="hero-overlay" />
           <Container>
             <Row className="align-items-center hero-content">
               <Col md={6}>
                 <div className="hero-left">
-                  <p className="hero-eyebrow">Software Developer</p>
+                  <p className="hero-label">Software Developer</p>
                   <h1 className="hero-name">Kenny Le</h1>
-                  <p className="hero-sub">Developing reliable and scalable software solutions</p>
+                  <p className="hero-description">Developing reliable and scalable software solutions</p>
+                  <div className="d-flex gap-3 mt-4">
+                    <Button className="btn-about" variant="primary" href="#case-studies">
+                      View Projects
+                    </Button>
+                    <Button variant="outline-light" href="#about">
+                      About Me
+                    </Button>
+                  </div>
                 </div>
               </Col>
             </Row>
@@ -43,7 +50,7 @@ function App() {
 
         <section id="about" className="about-section">
           <Container>
-            <Row className="align-items-center gy-4">
+            <Row className="align-items-center">
               <Col lg={6}>
                 <div className="about-text-panel">
                   <p className="section-label">About Me</p>
@@ -131,7 +138,7 @@ function App() {
             </div>
 
             <div className="row justify-content-center gx-4 gy-4">
-              <div className="col-sm-10 col-md-6 d-flex justify-content-center">
+              <div className="col-12 col-md-6 col-lg-3 d-flex justify-content-center">
                 <a href="/bike-repair.html" className="case-link">
                   <div className="case-card">
                     <img src={bikeRepairCase} alt="Bike Repair Shop" className="case-image" />
@@ -144,7 +151,7 @@ function App() {
                 </a>
               </div>
 
-              <div className="col-sm-10 col-md-6 d-flex justify-content-center">
+              <div className="col-12 col-md-6 col-lg-3 d-flex justify-content-center">
                 <a href="/memory-game.html" className="case-link">
                   <div className="case-card">
                     <img src={memoryGameCase} alt="Memory Game" className="case-image" />
@@ -157,7 +164,7 @@ function App() {
                 </a>
               </div>
 
-              <div className="col-sm-10 col-md-6 d-flex justify-content-center">
+              <div className="col-12 col-md-6 col-lg-3 d-flex justify-content-center">
                 <a href="/ecommerce-store.html" className="case-link">
                   <div className="case-card">
                     <img src={ecommerceStoreCase} alt="E-commerce Store" className="case-image" />
@@ -170,7 +177,7 @@ function App() {
                 </a>
               </div>
 
-              <div className="col-sm-10 col-md-6 d-flex justify-content-center">
+              <div className="col-12 col-md-6 col-lg-3 d-flex justify-content-center">
                 <a href="/analytics-dashboard.html" className="case-link">
                   <div className="case-card">
                     <img src={analyticsDashboardCase} alt="Analytics Dashboard" className="case-image" />
