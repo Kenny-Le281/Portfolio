@@ -14,7 +14,7 @@
 body {
   margin: 0;
   min-height: 100vh;
-  background: linear-gradient(180deg, #f3f9ff 0%, #ffffff 100%);
+  background: #FFFFFF;
 }
 
 .page-shell {
@@ -57,6 +57,7 @@ body {
 
 .page-info {
   padding: 38px 36px;
+  background-color: #f8fcf8c5;
 }
 
 .page-info h1 {
@@ -69,7 +70,7 @@ body {
 .page-info .tag {
   display: inline-block;
   margin-bottom: 22px;
-  color: #4a90e2;
+  color: #10B981;
   text-transform: uppercase;
   letter-spacing: 0.2em;
   font-size: 13px;
@@ -92,8 +93,8 @@ body {
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.04em;
-  background: rgba(74, 144, 226, 0.14);
-  color: #4a90e2;
+  background: rgba(88, 192, 119, 0.14);
+  color: #10B981;
   width: fit-content;
 }
 
@@ -102,7 +103,7 @@ body {
   margin-top: 28px;
   padding: 14px 24px;
   border-radius: 999px;
-  background: #4a90e2;
+  background: #10B981;
   color: #ffffff;
   text-decoration: none;
   font-weight: 600;
