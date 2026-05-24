@@ -56,7 +56,7 @@ function Home() {
                 <div className="about-text-panel">
                   <p className="section-label">About Me</p>
                   <h2 className="section-title">Hello, I'm Kenny.</h2>
-                  <p className="section-copy">
+                  <p className="section-text">
                     I am a second-year Software Engineering student in the co-op program at the University of Ottawa. I am passionate about software development and enjoy building clean, efficient, and user-focused applications.
                   </p>
 
@@ -89,63 +89,63 @@ function Home() {
                 <div className="work-card">
                   <span className="work-step">01</span>
                   <h3>Understand the problem</h3>
-                  <p className="work-copy">What am I building? Who is it for?</p>
+                  <p className="work-text">What am I building? Who is it for?</p>
                 </div>
               </div>
               <div className="col-sm-10 col-md-6">
                 <div className="work-card">
                   <span className="work-step">02</span>
                   <h3>Plan the layout</h3>
-                  <p className="work-copy">Sketch ideas (quick paper sketch first, then Figma). Decide structure (navbar, cards, etc.).</p>
+                  <p className="work-text">Sketch ideas (quick paper sketch first, then Figma). Decide structure (navbar, cards, etc.).</p>
                 </div>
               </div>
               <div className="col-sm-10 col-md-6">
                 <div className="work-card">
                   <span className="work-step">03</span>
                   <h3>Design the UI</h3>
-                  <p className="work-copy">Choose colors, fonts, spacing. Make it look clean and consistent.</p>
+                  <p className="work-text">Choose colors, fonts, spacing. Make it look clean and consistent.</p>
                 </div>
               </div>
               <div className="col-sm-10 col-md-6">
                 <div className="work-card">
                   <span className="work-step">04</span>
                   <h3>Build it</h3>
-                  <p className="work-copy">Code it using React. Style it with Bootstrap and CSS.</p>
+                  <p className="work-text">Code it using React. Style it with Bootstrap and CSS.</p>
                 </div>
               </div>
               <div className="col-sm-10 col-md-6">
                 <div className="work-card">
                   <span className="work-step">05</span>
                   <h3>Test & improve</h3>
-                  <p className="work-copy">Check responsiveness (mobile vs desktop). Fix spacing, alignment, usability issues.</p>
+                  <p className="work-text">Check responsiveness (mobile vs desktop). Fix spacing, alignment, usability issues.</p>
                 </div>
               </div>
               <div className="col-sm-10 col-md-6">
                 <div className="work-card">
                   <span className="work-step">06</span>
                   <h3>Iterate on feedback</h3>
-                  <p className="work-copy">Gather user feedback, refine the interface, and improve usability based on user input.</p>
+                  <p className="work-text">Gather user feedback, refine the interface, and improve usability based on user input.</p>
                 </div>
               </div>
             </div>
           </div>
         </section>
 
-        <section id="case-studies" className="services-section">
+        <section id="case-studies" className="project-section">
           <div className="container">
-            <div className="services-heading text-center mb-5">
+            <div className="project-heading text-center mb-5">
               <p className="section-label">Case Studies</p>
-              <h2 className="services-title">Projects I’m Building</h2>
+              <h2 className="project-title">Projects I’m Building</h2>
             </div>
 
             <div className="row justify-content-center gx-4 gy-4">
               <div className="col-12 col-md-6 col-lg-3 d-flex justify-content-center">
-                <Link to="/bike-repair" className="case-link">
-                  <div className="case-card">
-                    <img src={bikeRepairCase} alt="Bike Repair Shop" className="case-image" />
-                    <div className="case-card-body">
+                <Link to="/bike-repair" className="project-link">
+                  <div className="project-card">
+                    <img src={bikeRepairCase} alt="Bike Repair Shop" className="project-image" />
+                    <div className="project-card-body">
                       <h3>Bike Repair Shop</h3>
-                      <p className="case-copy">A user-focused bike repair booking experience with service selection, appointment scheduling, and storefront details.</p>
+                      <p className="project-text">A user-focused bike repair booking experience with service selection, appointment scheduling, and storefront details.</p>
                       <span className="coming-tag">Coming Soon</span>
                     </div>
                   </div>
@@ -153,12 +153,12 @@ function Home() {
               </div>
 
               <div className="col-12 col-md-6 col-lg-3 d-flex justify-content-center">
-                <Link to="/memory-game" className="case-link">
-                  <div className="case-card">
-                    <img src={memoryGameCase} alt="Memory Game" className="case-image" />
-                    <div className="case-card-body">
+                <Link to="/memory-game" className="project-link">
+                  <div className="project-card">
+                    <img src={memoryGameCase} alt="Memory Game" className="project-image" />
+                    <div className="project-card-body">
                       <h3>Memory Game</h3>
-                      <p className="case-copy">A playful memory matching game with responsive design, animations, and polished user interactions.</p>
+                      <p className="project-text">A playful memory matching game with responsive design, animations, and polished user interactions.</p>
                       <span className="coming-tag">Coming Soon</span>
                     </div>
                   </div>
@@ -166,12 +166,12 @@ function Home() {
               </div>
 
               <div className="col-12 col-md-6 col-lg-3 d-flex justify-content-center">
-                <Link to="/ecommerce" className="case-link">
-                  <div className="case-card">
-                    <img src={ecommerceStoreCase} alt="E-commerce Store" className="case-image" />
-                    <div className="case-card-body">
+                <Link to="/ecommerce" className="project-link">
+                  <div className="project-card">
+                    <img src={ecommerceStoreCase} alt="E-commerce Store" className="project-image" />
+                    <div className="project-card-body">
                       <h3>E-commerce Store</h3>
-                      <p className="case-copy">A modern online storefront with product browsing, clean checkout flows, and strong visual merchandising.</p>
+                      <p className="project-text">A modern online storefront with product browsing, clean checkout flows, and strong visual merchandising.</p>
                       <span className="coming-tag">Coming Soon</span>
                     </div>
                   </div>
@@ -179,12 +179,12 @@ function Home() {
               </div>
 
               <div className="col-12 col-md-6 col-lg-3 d-flex justify-content-center">
-                <Link to="/analytics" className="case-link">
-                  <div className="case-card">
-                    <img src={analyticsDashboardCase} alt="Analytics Dashboard" className="case-image" />
-                    <div className="case-card-body">
+                <Link to="/analytics" className="project-link">
+                  <div className="project-card">
+                    <img src={analyticsDashboardCase} alt="Analytics Dashboard" className="project-image" />
+                    <div className="project-card-body">
                       <h3>Analytics Dashboard</h3>
-                      <p className="case-copy">A data-driven analytics site with clear charts, performance metrics, and easy-to-scan insights.</p>
+                      <p className="project-text">A data-driven analytics site with clear charts, performance metrics, and easy-to-scan insights.</p>
                       <span className="coming-tag">Coming Soon</span>
                     </div>
                   </div>
