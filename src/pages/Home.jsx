@@ -2,7 +2,7 @@ import { Button, Col, Container, Navbar, Nav, Row } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import heroImg from '../assets/hero.jpg'
 import profileImg from '../assets/profile-headshot.jpg'
-import bikeRepairCase from '../assets/bike-repair-service.jpg'
+import barbershopCase from '../assets/barbershop.png'
 import memoryGameCase from '../assets/memory-game.avif'
 import ecommerceStoreCase from '../assets/e-commerce.jpg'
 import analyticsDashboardCase from '../assets/analytics-dashboard.avif'
@@ -140,16 +140,21 @@ function Home() {
 
             <div className="row justify-content-center gx-4 gy-4">
               <div className="col-12 col-md-6 col-lg-3 d-flex justify-content-center">
-                <Link to="/bike-repair" className="project-link">
+                <a
+                  href="https://seg-3125-assignment2-barbershop.vercel.app/"
+                  className="project-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <div className="project-card">
-                    <img src={bikeRepairCase} alt="Bike Repair Shop" className="project-image" />
+                    <img src={barbershopCase} alt="Barbershop" className="project-image" />
                     <div className="project-card-body">
-                      <h3>Bike Repair Shop</h3>
-                      <p className="project-text">A user-focused bike repair booking experience with service selection, appointment scheduling, and storefront details.</p>
-                      <span className="coming-tag">Coming Soon</span>
+                      <h3>FreshFade Studio</h3>
+                      <p className="project-text">A user-focused barbershop booking experience with service selection, appointment scheduling, and shop details.</p>
+                      <span className="coming-tag available-tag">Available</span>
                     </div>
                   </div>
-                </Link>
+                </a>
               </div>
 
               <div className="col-12 col-md-6 col-lg-3 d-flex justify-content-center">
