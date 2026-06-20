@@ -158,16 +158,21 @@ function Home() {
               </div>
 
               <div className="col-12 col-md-6 col-lg-3 d-flex justify-content-center">
-                <Link to="/memory-game" className="project-link">
+                <a
+                  href="https://seg-3125-assignment3-memory-game.vercel.app/"
+                  className="project-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <div className="project-card">
                     <img src={memoryGameCase} alt="Memory Game" className="project-image" />
                     <div className="project-card-body">
                       <h3>Memory Game</h3>
                       <p className="project-text">A playful memory matching game with responsive design, animations, and polished user interactions.</p>
-                      <span className="coming-tag">Coming Soon</span>
+                      <span className="coming-tag available-tag">Available</span>
                     </div>
                   </div>
-                </Link>
+                </a>
               </div>
 
               <div className="col-12 col-md-6 col-lg-3 d-flex justify-content-center">
