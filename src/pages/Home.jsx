@@ -176,16 +176,21 @@ function Home() {
               </div>
 
               <div className="col-12 col-md-6 col-lg-3 d-flex justify-content-center">
-                <Link to="/ecommerce" className="project-link">
+                <a
+                  href="https://seg-3125-assignment4-e-commerce.vercel.app/"
+                  className="project-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <div className="project-card">
                     <img src={ecommerceStoreCase} alt="E-commerce Store" className="project-image" />
                     <div className="project-card-body">
                       <h3>E-commerce Store</h3>
                       <p className="project-text">A modern online storefront with product browsing, clean checkout flows, and strong visual merchandising.</p>
-                      <span className="coming-tag">Coming Soon</span>
+                      <span className="coming-tag available-tag">Available</span>
                     </div>
                   </div>
-                </Link>
+                </a>
               </div>
 
               <div className="col-12 col-md-6 col-lg-3 d-flex justify-content-center">
