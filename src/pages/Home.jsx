@@ -1,5 +1,4 @@
 import { Button, Col, Container, Navbar, Nav, Row } from 'react-bootstrap'
-import { Link } from 'react-router-dom'
 import heroImg from '../assets/hero.jpg'
 import profileImg from '../assets/profile-headshot.jpg'
 import barbershopCase from '../assets/barbershop.png'
@@ -194,16 +193,21 @@ function Home() {
               </div>
 
               <div className="col-12 col-md-6 col-lg-3 d-flex justify-content-center">
-                <Link to="/analytics" className="project-link">
+                <a
+                  href="https://seg-3125-assignment5-dashboard.vercel.app/"
+                  className="project-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <div className="project-card">
                     <img src={analyticsDashboardCase} alt="Analytics Dashboard" className="project-image" />
                     <div className="project-card-body">
                       <h3>Analytics Dashboard</h3>
                       <p className="project-text">A data-driven analytics site with clear charts, performance metrics, and easy-to-scan insights.</p>
-                      <span className="coming-tag">Coming Soon</span>
+                      <span className="coming-tag available-tag">Available</span>
                     </div>
                   </div>
-                </Link>
+                </a>
               </div>
             </div>
           </div>
